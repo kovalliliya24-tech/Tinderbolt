@@ -2,6 +2,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, filters, CallbackQu
 
 from gpt import *
 from util import *
+import os
 TOKEN = os.getenv("BOT_TOKEN")
 async def start(update, context):
  # await send_photo(update, context,"hello")
