@@ -7,7 +7,7 @@ TOKEN = os.getenv("BOT_TOKEN")
 async def start(update, context):
  # await send_photo(update, context,"hello")
     message = load_message("main")
-    await send_photo(update, context, "hello")
+    # await send_photo(update, context, "hello")
     await send_text(update, context, message)
     await show_main_menu(update, context, {
         "start": "Головне меню",
